@@ -13,6 +13,17 @@
 		3777448C1FC41BFC00FEB1B8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3777448A1FC41BFC00FEB1B8 /* LaunchScreen.storyboard */; };
 		377744971FC41BFC00FEB1B8 /* FlowControllersExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377744961FC41BFC00FEB1B8 /* FlowControllersExampleTests.swift */; };
 		377744A21FC41BFC00FEB1B8 /* FlowControllersExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377744A11FC41BFC00FEB1B8 /* FlowControllersExampleUITests.swift */; };
+		377744B11FC41D2300FEB1B8 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377744AF1FC41D2300FEB1B8 /* LoginViewController.swift */; };
+		377744B21FC41D2300FEB1B8 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 377744B01FC41D2300FEB1B8 /* LoginViewController.xib */; };
+		377744B41FC41EEC00FEB1B8 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377744B31FC41EEC00FEB1B8 /* AppCoordinator.swift */; };
+		377744B71FC41F3000FEB1B8 /* AuthenticationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377744B61FC41F3000FEB1B8 /* AuthenticationCoordinator.swift */; };
+		377744BB1FC420BB00FEB1B8 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377744B91FC420BB00FEB1B8 /* ProfileViewController.swift */; };
+		377744BC1FC420BB00FEB1B8 /* ProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 377744BA1FC420BB00FEB1B8 /* ProfileViewController.xib */; };
+		377744BF1FC420CD00FEB1B8 /* SingUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377744BD1FC420CD00FEB1B8 /* SingUpViewController.swift */; };
+		377744C01FC420CD00FEB1B8 /* SingUpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 377744BE1FC420CD00FEB1B8 /* SingUpViewController.xib */; };
+		377744C21FC4220E00FEB1B8 /* ProfileFlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377744C11FC4220E00FEB1B8 /* ProfileFlowCoordinator.swift */; };
+		377744C41FC4231500FEB1B8 /* NavigationControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377744C31FC4231500FEB1B8 /* NavigationControllerDelegate.swift */; };
+		377744C61FC4549000FEB1B8 /* NavigationAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377744C51FC4549000FEB1B8 /* NavigationAnimator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +56,17 @@
 		3777449D1FC41BFC00FEB1B8 /* FlowControllersExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlowControllersExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		377744A11FC41BFC00FEB1B8 /* FlowControllersExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowControllersExampleUITests.swift; sourceTree = "<group>"; };
 		377744A31FC41BFC00FEB1B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		377744AF1FC41D2300FEB1B8 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		377744B01FC41D2300FEB1B8 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		377744B31FC41EEC00FEB1B8 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		377744B61FC41F3000FEB1B8 /* AuthenticationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationCoordinator.swift; sourceTree = "<group>"; };
+		377744B91FC420BB00FEB1B8 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		377744BA1FC420BB00FEB1B8 /* ProfileViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileViewController.xib; sourceTree = "<group>"; };
+		377744BD1FC420CD00FEB1B8 /* SingUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingUpViewController.swift; sourceTree = "<group>"; };
+		377744BE1FC420CD00FEB1B8 /* SingUpViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SingUpViewController.xib; sourceTree = "<group>"; };
+		377744C11FC4220E00FEB1B8 /* ProfileFlowCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileFlowCoordinator.swift; sourceTree = "<group>"; };
+		377744C31FC4231500FEB1B8 /* NavigationControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationControllerDelegate.swift; sourceTree = "<group>"; };
+		377744C51FC4549000FEB1B8 /* NavigationAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationAnimator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +122,9 @@
 				377744881FC41BFC00FEB1B8 /* Assets.xcassets */,
 				3777448A1FC41BFC00FEB1B8 /* LaunchScreen.storyboard */,
 				3777448D1FC41BFC00FEB1B8 /* Info.plist */,
+				377744B81FC4209A00FEB1B8 /* ViewControllers */,
+				377744B51FC41F0A00FEB1B8 /* Coordinators */,
+				377744C51FC4549000FEB1B8 /* NavigationAnimator.swift */,
 			);
 			path = FlowControllersExample;
 			sourceTree = "<group>";
@@ -120,6 +145,30 @@
 				377744A31FC41BFC00FEB1B8 /* Info.plist */,
 			);
 			path = FlowControllersExampleUITests;
+			sourceTree = "<group>";
+		};
+		377744B51FC41F0A00FEB1B8 /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				377744B31FC41EEC00FEB1B8 /* AppCoordinator.swift */,
+				377744B61FC41F3000FEB1B8 /* AuthenticationCoordinator.swift */,
+				377744C11FC4220E00FEB1B8 /* ProfileFlowCoordinator.swift */,
+				377744C31FC4231500FEB1B8 /* NavigationControllerDelegate.swift */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		377744B81FC4209A00FEB1B8 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				377744AF1FC41D2300FEB1B8 /* LoginViewController.swift */,
+				377744B01FC41D2300FEB1B8 /* LoginViewController.xib */,
+				377744B91FC420BB00FEB1B8 /* ProfileViewController.swift */,
+				377744BA1FC420BB00FEB1B8 /* ProfileViewController.xib */,
+				377744BD1FC420CD00FEB1B8 /* SingUpViewController.swift */,
+				377744BE1FC420CD00FEB1B8 /* SingUpViewController.xib */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -229,8 +278,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				377744C01FC420CD00FEB1B8 /* SingUpViewController.xib in Resources */,
+				377744B21FC41D2300FEB1B8 /* LoginViewController.xib in Resources */,
 				3777448C1FC41BFC00FEB1B8 /* LaunchScreen.storyboard in Resources */,
 				377744891FC41BFC00FEB1B8 /* Assets.xcassets in Resources */,
+				377744BC1FC420BB00FEB1B8 /* ProfileViewController.xib in Resources */,
 				377744871FC41BFC00FEB1B8 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -256,7 +308,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				377744B41FC41EEC00FEB1B8 /* AppCoordinator.swift in Sources */,
+				377744B11FC41D2300FEB1B8 /* LoginViewController.swift in Sources */,
+				377744BB1FC420BB00FEB1B8 /* ProfileViewController.swift in Sources */,
+				377744B71FC41F3000FEB1B8 /* AuthenticationCoordinator.swift in Sources */,
+				377744C41FC4231500FEB1B8 /* NavigationControllerDelegate.swift in Sources */,
+				377744BF1FC420CD00FEB1B8 /* SingUpViewController.swift in Sources */,
+				377744C21FC4220E00FEB1B8 /* ProfileFlowCoordinator.swift in Sources */,
 				377744821FC41BFC00FEB1B8 /* AppDelegate.swift in Sources */,
+				377744C61FC4549000FEB1B8 /* NavigationAnimator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
