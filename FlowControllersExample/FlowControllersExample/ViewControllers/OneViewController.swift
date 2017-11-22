@@ -28,8 +28,18 @@ class OneViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.title = "FirstViewController"
-        navigationController?.navigationItem.backBarButtonItem?.title = ""
+        let image = UIImage(named: "Apple-Logo-Store-TA-692625636")
+        let imageView = UIImageView(image: image)
+        imageView.translatesAutoresizingMaskIntoConstraints = false
+        view.addSubview(imageView)
+        imageView.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true
+        imageView.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
+        imageView.topAnchor.constraint(equalTo: view.topAnchor).isActive = true
+        imageView.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
+        let button = UIButton(frame: view.bounds)
+        button.center = view.center
+        button.addTarget(self, action: #selector(dismissViewController(sender:)), for: .touchUpInside)
+        view.addSubview(button)
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -40,7 +50,7 @@ class OneViewController: UIViewController {
         print("Deallocating: \(self)")
     }
     
-    func dismissViewController(sender:Any) {
+    @objc func dismissViewController(sender:Any) {
         print("dismiss button pressed")
         delegate?.dismissFirstViewController()
     }

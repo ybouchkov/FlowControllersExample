@@ -51,7 +51,7 @@ final class ProfileFlowCoordinator: Coordinator {
         let firstViewModel = FirstViewModel()
         let firstVC = OneViewController(viewModel: firstViewModel)
         firstVC.delegate = self
-        navigationController.show(firstVC, sender: self)
+        navigationController.showDetailViewController(firstVC, sender: self)
         
     }
     
