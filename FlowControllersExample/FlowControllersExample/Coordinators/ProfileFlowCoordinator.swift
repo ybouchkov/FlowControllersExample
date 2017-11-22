@@ -56,15 +56,30 @@ final class ProfileFlowCoordinator: Coordinator {
     }
     
     fileprivate func showSecondViewController(){
-        
+        let secondViewModel = SecondViewModel()
+        let secondVC = SecondViewController(viewModel: secondViewModel)
+        secondVC.delegate = self
+        if isProfileViewContoller {
+            navigationController.show(secondVC, sender: self)
+        }
     }
     
     fileprivate func showThirdViewController() {
+        let thirdViewModel = ThirdViewModel()
+        let thirdVC = ThirdViewController(viewModel: thirdViewModel)
+        thirdVC.delegate = self
         
+        if isProfileViewContoller {
+            navigationController.show(thirdVC, sender: self)
+        }
     }
     
     fileprivate func dismissModal() {
         navigationController.dismiss(animated: true, completion: nil)
+    }
+    
+    fileprivate func popToProfileVC () {
+        navigationController.popViewController(animated: true)
     }
 
 }
@@ -88,5 +103,12 @@ extension ProfileFlowCoordinator: FirstViewControllerDelegates {
         dismissModal()
     }
 }
+
+extension ProfileFlowCoordinator: SecondAndThirdViewControllersDelegate {
+    func didBackToProfileViewController() {
+        popToProfileVC()
+    }
+}
+
 
 

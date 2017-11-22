@@ -8,12 +8,26 @@
 
 import UIKit
 
+protocol ThirdViewModelType { }
+struct ThirdViewModel: ThirdViewModelType { }
+
 class ThirdViewController: UIViewController {
 
+    let viewModel: ThirdViewModel?
+    weak var delegate: SecondAndThirdViewControllersDelegate?
+    
+    init(viewModel: ThirdViewModel) {
+        self.viewModel = viewModel
+        super.init(nibName: nil, bundle: nil)
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        self.title = "ThirdViewController"
     }
     
     deinit {
