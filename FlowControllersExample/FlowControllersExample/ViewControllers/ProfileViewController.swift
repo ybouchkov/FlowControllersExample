@@ -13,9 +13,9 @@ struct ProfileViewModel:ProfileViewModelType { }
 protocol ProfileViewModelType { }
 
 protocol ProfileViewControllerDelegate:class  {
-    func didSelectSettingsAction() // for example
-    func didSelectFollowingAction() // another example
-    func didSelectFollowersAction() // another example
+    func didSelectFirstViewController() // for example
+    func didSelectSecondViewController() // another example
+    func didSelectThirdViewController() // another example
 }
 
 class ProfileViewController: UIViewController {
@@ -32,4 +32,15 @@ class ProfileViewController: UIViewController {
         fatalError("init(coder:) has not been implemented")
     }
     
+    
+    @IBAction func firstOption(_ sender: UIBarButtonItem) {
+        delegate?.didSelectFirstViewController()
+    }
+    @IBAction func secondOption(_ sender: UIBarButtonItem) {
+        delegate?.didSelectSecondViewController()
+    }
+    @IBAction func didSelectThirdOption(_ sender: UIBarButtonItem) {
+        delegate?.didSelectThirdViewController()
+    }
 }
+

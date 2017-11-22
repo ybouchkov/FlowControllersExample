@@ -46,17 +46,46 @@ final class ProfileFlowCoordinator: Coordinator {
             self.navigationController.setViewControllers([self.profileViewController], animated: false)
         }
     }
+    
+    fileprivate func showFirstViewController() {
+        let firstViewModel = FirstViewModel()
+        let firstVC = OneViewController(viewModel: firstViewModel)
+        firstVC.delegate = self
+        navigationController.show(firstVC, sender: self)
+        
+    }
+    
+    fileprivate func showSecondViewController(){
+        
+    }
+    
+    fileprivate func showThirdViewController() {
+        
+    }
+    
+    fileprivate func dismissModal() {
+        navigationController.dismiss(animated: true, completion: nil)
+    }
+
 }
 
 extension ProfileFlowCoordinator : ProfileViewControllerDelegate {
-    
-    func didSelectSettingsAction() {
+    func didSelectFirstViewController() {
+        showFirstViewController()
     }
     
-    func didSelectFollowingAction() {
+    func didSelectSecondViewController() {
+        showSecondViewController()
     }
     
-    func didSelectFollowersAction() {
+    func didSelectThirdViewController() {
+        showThirdViewController()
+    }
+}
+
+extension ProfileFlowCoordinator: FirstViewControllerDelegates {
+    func dismissFirstViewController() {
+        dismissModal()
     }
 }
 
